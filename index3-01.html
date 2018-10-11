@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+    <title>外检信息采集数据展示系统</title>
+
+  <script src="http://libs.baidu.com/jquery/2.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="javascript/style.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/polyline.css">
+  </head>
+  <body>
+  <!-- 头部页面 -->
+  <div class="header">
+  <div class='logo'>外检信息采集数据展示系统</div>
+  <div class="nav">
+  <ul>
+    <li class='first'><a href="index.html">首页</a></li>
+    <li class='district'><a href="#" >行政区域统计</a></li>
+    <li class='enterprise'><a href="#" ">企业统计</a></li>
+    <li class='secure'><a href="#">安全隐患统计</a></li>
+    <li class='area'><a href="#">区域统计</a></li>
+    <li class='item'><a href="#">企业展示</a></li>
+    <li class='polyline show'><a href="index3-01.html" >人员工号统计</a></li>
+  </ul>
+  </div>
+  </div>
+    <form class="tab-target targeted" id="knowledge">
+    <table  class="table-tap">
+  <tr>
+    <th>工号</th><th>注册代码</th><th>经度</th><th>纬度</th>
+    <th>上传时间</th><th>地址</th>
+  </tr>
+  <tr>
+    <td>190357</td>
+    <td>83304401112014110008</td>
+    <td>113.26444</td>
+    <td>23.12863</td>
+    <td>2017-10-25 13:43:10</td>
+    <td>广东省广州市越秀区连新路2号(近公园前地铁站)</td>
+  </tr>
+  <tr>
+    <td>190357</td>
+    <td>83304401112014110008</td>
+    <td>113.26444</td>
+    <td>23.12863</td>
+    <td>2017-10-25 13:43:10</td>
+    <td>广东省广州市越秀区连新路2号(近公园前地铁站)</td>
+  </tr>
+  <tr>
+    <td>190357</td>
+    <td>83304401112014110008</td>
+    <td>113.26444</td>
+    <td>23.12863</td>
+    <td>2017-10-25 13:43:10</td>
+    <td>广东省广州市越秀区连新路2号(近公园前地铁站)</td>
+  </tr>
+  <tr>
+    <td>190357</td>
+    <td>83304401112014110008</td>
+    <td>113.26444</td>
+    <td>23.12863</td>
+    <td>2017-10-25 13:43:10</td>
+    <td>广东省广州市越秀区连新路2号(近公园前地铁站)</td>
+  </tr>
+  <tr>
+    <td>190357</td>
+    <td>83304401112014110008</td>
+    <td>113.26444</td>
+    <td>23.12863</td>
+    <td>2017-10-25 13:43:10</td>
+    <td>广东省广州市越秀区连新路2号(近公园前地铁站)</td>
+  </tr>
+  <tr>
+    <td>190357</td>
+    <td>83304401112014110008</td>
+    <td>113.26444</td>
+    <td>23.12863</td>
+    <td>2017-10-25 13:43:10</td>
+    <td>广东省广州市越秀区连新路2号(近公园前地铁站)</td>
+  </tr>
+  <tr>
+    <td>190357</td>
+    <td>83304401112014110008</td>
+    <td>113.26444</td>
+    <td>23.12863</td>
+    <td>2017-10-25 13:43:10</td>
+    <td>广东省广州市越秀区连新路2号(近公园前地铁站)</td>
+  </tr>
+  <tr>
+    <td>190357</td>
+    <td>83304401112014110008</td>
+    <td>113.26444</td>
+    <td>23.12863</td>
+    <td>2017-10-25 13:43:10</td>
+    <td>广东省广州市越秀区连新路2号(近公园前地铁站)</td>
+  </tr>
+  <tr>
+    <td>190357</td>
+    <td>83304401112014110008</td>
+    <td>113.26444</td>
+    <td>23.12863</td>
+    <td>2017-10-25 13:43:10</td>
+    <td>广东省广州市越秀区连新路2号(近公园前地铁站)</td>
+  </tr>
+  <tr>
+    <td>190357</td>
+    <td>83304401112014110008</td>
+    <td>113.26444</td>
+    <td>23.12863</td>
+    <td>2017-10-25 13:43:10</td>
+    <td>广东省广州市越秀区连新路2号(近公园前地铁站)</td>
+  </tr>
+  <tr>
+    <td>190357</td>
+    <td>83304401112014110008</td>
+    <td>113.26444</td>
+    <td>23.12863</td>
+    <td>2017-10-25 13:43:10</td>
+    <td>广东省广州市越秀区连新路2号(近公园前地铁站)</td>
+  </tr>
+  </table>
+  </form>
+  <div class="pagination">
+    <input type="hidden" name="pagenumber" value="01">
+    <a class="a1" href="javascript:goPrevious()">上一页<a/>
+    <a class="a2" href="javascript:goNext()">下一页<a/>
+    <script type="text/javascript">
+    //下一页
+    function goNext(){
+    goPage(parseInt(document.all.item("pagenumber").value)+1);
+    }
+    //上一页
+    function goPrevious(){
+    goPage(parseInt(document.all.item("pagenumber").value)-1);
+    }
+    
+    //进入页号为pageNumber的页面
+    function goPage(pagenumber){
+    if(pagenumber<1) {alert("到了首页");return;}
+    if(pagenumber>3) {alert("到了第三页了");return;}
+    if(pagenumber<10) {pagenumber = "0"+pagenumber;}
+    window.location.href="index3-"+pagenumber+".html";
+    }
+    </script>
+  </div>
+  </body>
+</html>
